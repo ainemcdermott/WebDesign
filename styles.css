@@ -147,13 +147,13 @@ input[type="text"] {
 }
 
 .button1 {
-    padding: 50px;
+    padding: 10px;
     font-size: 16px;
     cursor: pointer;
     background-color: #4CAF50;
     color: white;
     border: none;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #recipe-container {
