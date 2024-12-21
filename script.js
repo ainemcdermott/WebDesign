@@ -41,3 +41,18 @@ function displayRecipes(recipes) {
         container.appendChild(recipeElement);
     });
 }
+
+let currentIndex = 0; // Track the current slide index
+const slides = document.querySelector('.slides'); // The slides container
+
+// Function to move the slide
+function moveSlide(step) {
+    currentIndex += step;
+
+    // Ensure currentIndex stays within bounds (looping)
+    if (currentIndex < 0) currentIndex = slides.children.length - 1;
+    if (currentIndex >= slides.children.length) currentIndex = 0;
+
+    // Move the slides container to show the current image
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
